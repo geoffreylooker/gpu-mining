@@ -1,0 +1,635 @@
+
+    1000/82.8
+
+
+    ============================================================
+
+    r9 390 (defaults, none set)
+    595watts (msi & xfs - dedicated rm850i)
+    55.21mh
+    10.8 h/watts
+
+    {"rigs":{"4a70c7":{"condition":"mining","version":"1.2.4","driver":"fglrx","miner":"ethminer","gpus":"2","miner_instance":2,"miner_hashes":"27.90 27.31","bioses":"MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8","meminfo":"GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG","vramsize":"8 8","drive_name":"Ultra Fit 4C530001090214118111","mobo":"Maximus IV GENE-Z","lan_chip":"Intel Corporation 82579V Gigabit Network Connection (rev 05)","connected_displays":"640x480","ram":"16","rack_loc":false,"ip":"192.168.1.101","server_time":1504716180,"uptime":"529","miner_secs":460,"rx_kbps":"0.00","tx_kbps":"0.00","load":"0.09","cpu_temp":"35","freespace":3.1,"hash":55.21,"pool":"us1.ethermine.org:4444","temp":"52.00 73.00","powertune":"20 20","voltage":"0 0","watts":null,"fanrpm":"2241 3505","core":"1080 1060","mem":"1500 1500"}},"total_hash":55.21,"alive_gpus":2,"total_gpus":2,"alive_rigs":1,"total_rigs":1,"current_version":"1.2.4","avg_temp":0,"capacity":"100.0","per_info":{"ethminer":{"hash":55,"per_alive_gpus":2,"per_total_gpus":2,"per_alive_rigs":1,"per_total_rigs":1,"per_hash-gpu":"27.5","per_hash-rig":"55.0","current_time":1504716257}}}
+
+    echo '' | python -m json.tool
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504716257,
+                "hash": 55,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "27.5",
+                "per_hash-rig": "55.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "mining",
+                "connected_displays": "640x480",
+                "core": "1080 1060",
+                "cpu_temp": "35",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2241 3505",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 55.21,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.09",
+                "mem": "1500 1500",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "27.90 27.31",
+                "miner_instance": 2,
+                "miner_secs": 460,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "20 20",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504716180,
+                "temp": "52.00 73.00",
+                "tx_kbps": "0.00",
+                "uptime": "529",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 55.21,
+        "total_rigs": 1
+    }
+
+
+    ============================================================
+
+    r9 390 (defaults, only powertune=50)
+    591watts (msi & xfs - dedicated rm850i)
+    55.33 mh
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 85
+    globalpowertune 50
+    #globalcore 1000
+    #globalmem 1250
+    # globalfan 90
+    # globalpowertune 20
+
+
+    {"rigs":{"4a70c7":{"condition":"just_booted","version":"1.2.4","driver":"fglrx","miner":"ethminer","gpus":"2","miner_instance":2,"miner_hashes":"27.93 27.40","bioses":"MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8","meminfo":"GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG","vramsize":"8 8","drive_name":"Ultra Fit 4C530001090214118111","mobo":"Maximus IV GENE-Z","lan_chip":"Intel Corporation 82579V Gigabit Network Connection (rev 05)","connected_displays":"640x480","ram":"16","rack_loc":false,"ip":"192.168.1.101","server_time":1504716489,"uptime":"152","miner_secs":84,"rx_kbps":"0.00","tx_kbps":"0.00","load":"0.08","cpu_temp":"39","freespace":3.1,"hash":55.33,"pool":"us1.ethermine.org:4444","temp":"48.00 64.00","powertune":"50 50","voltage":"0 0","watts":null,"fanrpm":"2249 3521","core":"1080 1060","mem":"1500 1500"}},"total_hash":55.33,"alive_gpus":2,"total_gpus":2,"alive_rigs":1,"total_rigs":1,"current_version":"1.2.4","avg_temp":0,"capacity":"100.0","per_info":{"ethminer":{"hash":55,"per_alive_gpus":2,"per_total_gpus":2,"per_alive_rigs":1,"per_total_rigs":1,"per_hash-gpu":"27.5","per_hash-rig":"55.0","current_time":1504716529}}}
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504716529,
+                "hash": 55,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "27.5",
+                "per_hash-rig": "55.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "just_booted",
+                "connected_displays": "640x480",
+                "core": "1080 1060",
+                "cpu_temp": "39",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2249 3521",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 55.33,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.08",
+                "mem": "1500 1500",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "27.93 27.40",
+                "miner_instance": 2,
+                "miner_secs": 84,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504716489,
+                "temp": "48.00 64.00",
+                "tx_kbps": "0.00",
+                "uptime": "152",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 55.33,
+        "total_rigs": 1
+    }
+
+
+    {"rigs":{"4a70c7":{"condition":"mining","version":"1.2.4","driver":"fglrx","miner":"ethminer","gpus":"2","miner_instance":2,"miner_hashes":"27.92 27.43","bioses":"MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8","meminfo":"GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG","vramsize":"8 8","drive_name":"Ultra Fit 4C530001090214118111","mobo":"Maximus IV GENE-Z","lan_chip":"Intel Corporation 82579V Gigabit Network Connection (rev 05)","connected_displays":"640x480","ram":"16","rack_loc":false,"ip":"192.168.1.101","server_time":1504716866,"uptime":"529","miner_secs":461,"rx_kbps":"0.00","tx_kbps":"0.00","load":"0.14","cpu_temp":"34","freespace":3.1,"hash":55.35,"pool":"us1.ethermine.org:4444","temp":"52.00 73.00","powertune":"50 50","voltage":"0 0","watts":null,"fanrpm":"2227 3501","core":"1080 1060","mem":"1500 1500"}},"total_hash":55.35,"alive_gpus":2,"total_gpus":2,"alive_rigs":1,"total_rigs":1,"current_version":"1.2.4","avg_temp":0,"capacity":"100.0","per_info":{"ethminer":{"hash":55,"per_alive_gpus":2,"per_total_gpus":2,"per_alive_rigs":1,"per_total_rigs":1,"per_hash-gpu":"27.5","per_hash-rig":"55.0","current_time":1504716911}}}
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504716911,
+                "hash": 55,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "27.5",
+                "per_hash-rig": "55.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "mining",
+                "connected_displays": "640x480",
+                "core": "1080 1060",
+                "cpu_temp": "34",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2227 3501",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 55.35,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.14",
+                "mem": "1500 1500",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "27.92 27.43",
+                "miner_instance": 2,
+                "miner_secs": 461,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504716866,
+                "temp": "52.00 73.00",
+                "tx_kbps": "0.00",
+                "uptime": "529",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 55.35,
+        "total_rigs": 1
+    }
+
+
+    ============================================================
+
+    r9 390 (defaults, only powertune=50)
+    495watts (msi & xfs - dedicated rm850i)
+    52 mh
+    9.51 h/watts
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 85
+    globalpowertune 50
+    globalcore 1000
+    globalmem 1250
+    # globalfan 90
+    # globalpowertune 20
+
+
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504717602,
+                "hash": 52,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "26.0",
+                "per_hash-rig": "52.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "just_booted",
+                "connected_displays": "640x480",
+                "core": "1000 1000",
+                "cpu_temp": "38",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2258 3564",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 51.85,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.11",
+                "mem": "1250 1250",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "25.92 25.93",
+                "miner_instance": 2,
+                "miner_secs": 82,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504717548,
+                "temp": "43.00 59.00",
+                "tx_kbps": "0.00",
+                "uptime": "152",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 51.85,
+        "total_rigs": 1
+    }
+
+
+    ============================================================
+
+    r9 390 
+    570 watts (msi & xfs - dedicated rm850i)
+    53 mh
+    10.75 h/watts
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 85
+    globalpowertune 50
+    globalcore 1025
+    globalmem 1500
+    # globalfan 90
+    # globalpowertune 20
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504719470,
+                "hash": 53,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "26.5",
+                "per_hash-rig": "53.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "mining",
+                "connected_displays": "640x480",
+                "core": "1025 1025",
+                "cpu_temp": "34",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2235 3532",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 52.86,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.11",
+                "mem": "1500 1500",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "26.45 26.41",
+                "miner_instance": 2,
+                "miner_secs": 584,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504719468,
+                "temp": "50.00 72.00",
+                "tx_kbps": "0.00",
+                "uptime": "655",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 52.86,
+        "total_rigs": 1
+    }
+
+    ============================================================
+
+    r9 390 
+    565 watts (msi & xfs - dedicated rm850i)
+    55 mh
+    10.27
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 85
+    globalpowertune 50
+    # globalcore 1025
+    globalmem 1250
+    # globalfan 90
+    # globalpowertune 20
+
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504720178,
+                "hash": 55,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "27.5",
+                "per_hash-rig": "55.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "just_booted",
+                "connected_displays": "640x480",
+                "core": "1080 1060",
+                "cpu_temp": "34",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2267 3571",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 55.31,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.11",
+                "mem": "1250 1250",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "27.93 27.38",
+                "miner_instance": 2,
+                "miner_secs": 85,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504720108,
+                "temp": "47.00 63.00",
+                "tx_kbps": "0.00",
+                "uptime": "152",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 55.31,
+        "total_rigs": 1
+    }
+
+
+    ============================================================
+
+    r9 390 
+    450 watts (msi & xfs - dedicated rm850i)
+    49 mh
+    9.18 h/watts
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 85
+    globalpowertune 50
+    globalcore 950
+    globalmem 1250
+    # globalfan 90
+    # globalpowertune 20
+
+    {
+        "alive_gpus": 2,
+        "alive_rigs": 1,
+        "avg_temp": 0,
+        "capacity": "100.0",
+        "current_version": "1.2.4",
+        "per_info": {
+            "ethminer": {
+                "current_time": 1504721649,
+                "hash": 49,
+                "per_alive_gpus": 2,
+                "per_alive_rigs": 1,
+                "per_hash-gpu": "24.5",
+                "per_hash-rig": "49.0",
+                "per_total_gpus": 2,
+                "per_total_rigs": 1
+            }
+        },
+        "rigs": {
+            "4a70c7": {
+                "bioses": "MS-V30823-F2 113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8",
+                "condition": "mining",
+                "connected_displays": "640x480",
+                "core": "950 950",
+                "cpu_temp": "38",
+                "drive_name": "Ultra Fit 4C530001090214118111",
+                "driver": "fglrx",
+                "fanrpm": "2255 3558",
+                "freespace": 3.1,
+                "gpus": "2",
+                "hash": 49.07,
+                "ip": "192.168.1.101",
+                "lan_chip": "Intel Corporation 82579V Gigabit Network Connection (rev 05)",
+                "load": "0.10",
+                "mem": "1250 1250",
+                "meminfo": "GPU0:01.00.0:Radeon R9 390x:MS-V30823-F2:SK Hynix H5GC4H24AJR\nGPU1:02.00.0:Radeon R9 390x:113-GRENADA_XT_C671_D5_8GB_HYMIC_BBY_W8:Elpida EDW4032BABG",
+                "miner": "ethminer",
+                "miner_hashes": "24.59 24.48",
+                "miner_instance": 2,
+                "miner_secs": 212,
+                "mobo": "Maximus IV GENE-Z",
+                "pool": "us1.ethermine.org:4444",
+                "powertune": "50 50",
+                "rack_loc": false,
+                "ram": "16",
+                "rx_kbps": "0.00",
+                "server_time": 1504721606,
+                "temp": "42.00 59.00",
+                "tx_kbps": "0.00",
+                "uptime": "278",
+                "version": "1.2.4",
+                "voltage": "0 0",
+                "vramsize": "8 8",
+                "watts": null
+            }
+        },
+        "total_gpus": 2,
+        "total_hash": 49.07,
+        "total_rigs": 1
+    }
+
+
+    ============================================================
+
+    r9 390 
+    444 watts (msi & xfs - dedicated rm850i)
+    44 mh
+    9.06 h/watts
+
+    maxgputemp 85
+    stratumproxy enabled
+    proxywallet 0x15cb0a1cb2fec9adf3a56eac5e60631cce67e0c6
+    proxypool1 us1.ethermine.org:4444
+    proxypool2 us1.ethermine.org:14444
+    flags --cl-global-work 8192 --farm-recheck 200
+    globalfan 75
+    globalpowertune 50
+    globalcore 950
+    globalmem 1250
+    # globalfan 90
+    # globalpowertune 20
+
+    ===============
+    ==============
+    ==================
+
+
+    globalfan 80
+    globalpowertune 50
+    globalcore 800
+    globalmem 1000
+
+    62.2 hash
+    570w
+    39 48 51
+
+    ---
+
+    globalfan 80
+    globalpowertune 50
+    globalcore 800
+    globalmem 1250
+
+    62.2 hash
+    590w
+    39 48 51
+
+    ---
+
+    globalfan 70
+    globalpowertune 50
+    globalcore 800
+    globalmem 1050
+
+    62.4 hash
+    590w
+    40 48 52
+
+    ---
+
+    globalfan 70
+    globalpowertune 50
+    globalcore 800
+    #globalmem 1000
+
+    82m
+    850w
+    68 70 70
+
+    -----
+
+    globalfan 70
+    globalpowertune 50
+    globalcore 800
+    globalmem 1000
+
+    21 21 21/62
+    570w
+    39 47 51
+
+    ----
+
+
